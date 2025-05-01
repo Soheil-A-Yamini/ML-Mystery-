@@ -1,0 +1,8 @@
+    x = torch.randn(4, 28*28) # batch_size, h by w
+    vae = VAE(input_dim=784)
+    x_recon, muu, sigmaa = vae(x)
+    print(x_recon.shape)
+
+    # print(vae(x.shape))
+    print(muu.shape)
+    print(sigmaa.shape)
